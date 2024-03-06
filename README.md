@@ -33,11 +33,13 @@ Certainly! Here are the key features of the SlideMenuDrawer package:
 
 These features collectively empower developers to create intuitive and engaging navigation experiences within their Flutter applications using the SlideMenuDrawer package.
 
-[](https://i.postimg.cc/tgDmbCwX/gfgf.gif)
+[](https://github.com/abdulrehman192/flutter_slidable_menu/blob/main/ezgif-3-72b2bdd0ec.gif)
 
 ![](C:\Users\mrabd\Downloads\gfgf.gif)
 
 ![](C:\Users\mrabd\Downloads\ezgif-3-72b2bdd0ec.gif)
+
+
 
 ## Getting started
 just import the package library and use ;)
