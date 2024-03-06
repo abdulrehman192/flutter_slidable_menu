@@ -35,6 +35,10 @@ These features collectively empower developers to create intuitive and engaging 
 
 [](https://i.postimg.cc/tgDmbCwX/gfgf.gif)
 
+![](C:\Users\mrabd\Downloads\gfgf.gif)
+
+![](C:\Users\mrabd\Downloads\ezgif-3-72b2bdd0ec.gif)
+
 ## Getting started
 just import the package library and use ;)
 
