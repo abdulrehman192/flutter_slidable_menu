@@ -1,7 +1,7 @@
 name: flutter_slidable_menu
-description: "A new Flutter project."
+description: "Flutter Sliable Menu helps your to create beautiful animated sidebars. This widget have two scroll directions"
 version: 0.0.1
-homepage:
+homepage: https://github.com/abdulrehman192/flutter_slidable_menu
 
 environment:
   sdk: '>=3.2.5 <4.0.0'
@@ -21,7 +21,14 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  plugin:
+    platforms:
+      android: true
+      ios: true
+      web: true
+      windows: true
+      macos: true
+      linux: true
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
