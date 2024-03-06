@@ -35,8 +35,6 @@ These features collectively empower developers to create intuitive and engaging 
 
 [](https://i.postimg.cc/tgDmbCwX/gfgf.gif)
 
-![](C:\Users\mrabd\Downloads\gfgf.gif)
-
 ## Getting started
 just import the package library and use ;)
 
