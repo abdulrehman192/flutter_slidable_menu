@@ -11,14 +11,22 @@ class SlideMenuDrawer extends StatefulWidget {
   final Duration? animationDuration;
   final DrawerScrollDirection drawerScrollDirection;
   final bool toggleDrawer;
-  const SlideMenuDrawer({super.key, required this.drawer, required this.body, this.drawerOpenedWidth, this.drawerClosedWidth, this.animationDuration, this.drawerScrollDirection = DrawerScrollDirection.leftToRight, required this.toggleDrawer, this.header});
+  const SlideMenuDrawer(
+      {super.key,
+      required this.drawer,
+      required this.body,
+      this.drawerOpenedWidth,
+      this.drawerClosedWidth,
+      this.animationDuration,
+      this.drawerScrollDirection = DrawerScrollDirection.leftToRight,
+      required this.toggleDrawer,
+      this.header});
 
   @override
   State<SlideMenuDrawer> createState() => _SlideMenuDrawerState();
 }
 
 class _SlideMenuDrawerState extends State<SlideMenuDrawer> {
-
   double _defaultOpenedWidth = 250;
   double _defaultCloseWidth = 0;
   int _defaultAnimationTime = 500;
@@ -33,39 +41,40 @@ class _SlideMenuDrawerState extends State<SlideMenuDrawer> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
 
-    if(widget.toggleDrawer){
-      if(widget.drawerScrollDirection == DrawerScrollDirection.leftToRight){
+    if (widget.toggleDrawer) {
+      if (widget.drawerScrollDirection == DrawerScrollDirection.leftToRight) {
         _drawerLeftPosition = 0;
         _bodyLeftPosition = (widget.drawerOpenedWidth ?? _defaultOpenedWidth);
-      }
-      else if(widget.drawerScrollDirection == DrawerScrollDirection.rightToLeft){
+      } else if (widget.drawerScrollDirection ==
+          DrawerScrollDirection.rightToLeft) {
         _drawerRightPosition = 0;
         _bodyRightPosition = (widget.drawerOpenedWidth ?? _defaultOpenedWidth);
       }
       _bodyWidth = width - (widget.drawerOpenedWidth ?? _defaultOpenedWidth);
-    }
-    else{
-      if(widget.drawerScrollDirection == DrawerScrollDirection.leftToRight){
-        _drawerLeftPosition = -(widget.drawerOpenedWidth ?? _defaultOpenedWidth) + (widget.drawerClosedWidth ?? _defaultCloseWidth);
+    } else {
+      if (widget.drawerScrollDirection == DrawerScrollDirection.leftToRight) {
+        _drawerLeftPosition =
+            -(widget.drawerOpenedWidth ?? _defaultOpenedWidth) +
+                (widget.drawerClosedWidth ?? _defaultCloseWidth);
         _bodyLeftPosition = (widget.drawerClosedWidth ?? _defaultCloseWidth);
-      }
-      else if(widget.drawerScrollDirection == DrawerScrollDirection.rightToLeft){
+      } else if (widget.drawerScrollDirection ==
+          DrawerScrollDirection.rightToLeft) {
         _drawerRightPosition = 0;
         _bodyRightPosition = (widget.drawerClosedWidth ?? _defaultCloseWidth);
       }
       _bodyWidth = width - (widget.drawerClosedWidth ?? _defaultCloseWidth);
-
     }
     _drawerWidth = widget.drawerOpenedWidth ?? _defaultOpenedWidth;
 
     return Column(
       children: [
-        widget.header ?? const SizedBox() ,
+        widget.header ?? const SizedBox(),
         Expanded(
           child: Stack(
             children: [
               AnimatedPositioned(
-                  duration: widget.animationDuration ?? Duration(milliseconds: _defaultAnimationTime),
+                  duration: widget.animationDuration ??
+                      Duration(milliseconds: _defaultAnimationTime),
                   curve: Curves.easeInOut,
                   left: _drawerLeftPosition,
                   top: 0,
@@ -73,10 +82,10 @@ class _SlideMenuDrawerState extends State<SlideMenuDrawer> {
                   right: _drawerRightPosition,
                   width: _drawerWidth,
                   // height: height,
-                  child: widget.drawer
-              ),
+                  child: widget.drawer),
               AnimatedPositioned(
-                duration:  widget.animationDuration ?? Duration(milliseconds: _defaultAnimationTime),
+                duration: widget.animationDuration ??
+                    Duration(milliseconds: _defaultAnimationTime),
                 curve: Curves.easeInOut,
                 left: _bodyLeftPosition,
                 top: 0,
@@ -93,4 +102,4 @@ class _SlideMenuDrawerState extends State<SlideMenuDrawer> {
   }
 }
 
-enum DrawerScrollDirection {leftToRight, rightToLeft}
+enum DrawerScrollDirection { leftToRight, rightToLeft }
