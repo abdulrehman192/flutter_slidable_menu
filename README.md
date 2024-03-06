@@ -52,6 +52,7 @@ import 'package:flutter_slidable_menu/flutter_slidable_menu.dart';
 
 ```dart
 SlideMenuDrawer(
+    header: Container() // you can add your custom header or app bar on top of the page
     drawerClosedWidth: 50,
     drawer: Container(
     color: Colors.grey,

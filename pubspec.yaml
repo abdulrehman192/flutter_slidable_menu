@@ -1,6 +1,6 @@
 name: flutter_slidable_menu
 description: "Flutter Sliable Menu helps your to create beautiful animated sidebars. This widget have two scroll directions"
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/abdulrehman192/flutter_slidable_menu
 
 environment:
