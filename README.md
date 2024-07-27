@@ -33,9 +33,9 @@ Certainly! Here are the key features of the SlideMenuDrawer package:
 
 These features collectively empower developers to create intuitive and engaging navigation experiences within their Flutter applications using the SlideMenuDrawer package.
 
-![](https://github.com/abdulrehman192/flutter_slidable_menu/blob/main/ezgif-3-72b2bdd0ec.gif)
+![Package Functionality](https://firebasestorage.googleapis.com/v0/b/money-assistant-15daf.appspot.com/o/left.gif?alt=media&token=e94abf28-c703-48b1-811e-d8a6be2b0a05)
 
-![](https://github.com/abdulrehman192/flutter_slidable_menu/blob/main/gfgf.gif)
+![Package Functionality](https://firebasestorage.googleapis.com/v0/b/money-assistant-15daf.appspot.com/o/right.gif?alt=media&token=08738c5f-cada-4d59-8fa7-f54eed8fdf84)
 
 
 
